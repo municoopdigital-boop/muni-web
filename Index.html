@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNI - Tu plata, tu bienestar, tu comunidad.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Personalización basada en referencias como NU/Nequi */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Gradiente suave inspirado en tecnología/fintech */
+        .bg-gradient-brand {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        
+        .text-brand { color: #4F46E5; }
+        
+        /* Animación suave para elementos */
+        .fade-up { animation: fadeUp 1s ease-out; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Clase para ocultar barra de scroll en los ejemplos */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <img src="img/Logo muni color solido.png" alt="Logo MUNI" class="h-20 w-auto object-contain">
+        </div>
+        <div class="hidden md:flex gap-6 text-sm font-semibold text-gray-600">
+            <a href="#beneficios" class="hover:text-indigo-600 transition">Beneficios</a>
+            <a href="#experiencia" class="hover:text-indigo-600 transition">La App</a>
+            <a href="#comunidad" class="hover:text-indigo-600 transition">Comunidad</a>
+        </div>
+        <button class="bg-indigo-600 text-white px-6 py-2 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg hover:shadow-indigo-500/30">
+            Crear mi cuenta
+        </button>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold tracking-wide mb-4">
+                🚀 FINANZAS + BIENESTAR
+            </span>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
+                Maneja tu plata.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Sé parte de algo grande.</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Olvídate de ser solo un cliente. En MUNI eres parte de una comunidad digital que cuida tu dinero y tu bienestar. Sin filas, sin enredos y con voz propia.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transition shadow-xl hover:shadow-indigo-500/40 flex justify-center items-center gap-2">
+                    Únete a MUNI <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition flex justify-center items-center gap-2">
+                    <i class="fab fa-apple"></i> <i class="fab fa-google-play"></i> Descargar App
+                </button>
+            </div>
+            <p class="mt-4 text-xs text-gray-400">
+                <i class="fas fa-shield-alt text-green-500"></i> Supervisado por Supersolidaria. Tu dinero está seguro.
+            </p>
+        </div>
+        
+        <div class="relative hidden md:block fade-up" style="animation-delay: 0.2s;">
+            <div class="absolute inset-0 bg-gradient-brand opacity-10 blur-3xl rounded-full"></div>
+            <div class="relative mx-auto border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl">
+                <div class="h-[32px] w-[3px] bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
+                <div class="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
+                
+                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white relative">
+                    <img src="img/Multimedia (5).jpg" alt="Muni App Home" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white py-10 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-400 font-semibold uppercase tracking-widest text-xs mb-6">Lo mejor de dos mundos: Tecnología + Solidaridad</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-600"><i class="fas fa-lock"></i> Seguridad 24/7</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-600"><i class="fas fa-university"></i> Supersolidaria</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-gray-600"><i class="fas fa-fingerprint"></i> Biometría Facial</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Mucho más que una billetera digital</h2>
+            <p class="text-gray-600 text-lg">Creamos un ecosistema donde tus finanzas financian tu bienestar. Aquí ganas tú y ganamos todos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 text-2xl mb-6">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Pagos y Giros al instante</h3>
+                <p class="text-gray-600">Paga servicios, transfiere a amigos y usa códigos QR. Sin filas, sin efectivo y desde tu celular en segundos.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-2xl mb-6">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Ecosistema de Bienestar</h3>
+                <p class="text-gray-600">Accede a descuentos exclusivos en salud, educación y entretenimiento solo por ser parte de la comunidad MUNI.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-2xl mb-6">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Tu Asesor Inteligente</h3>
+                <p class="text-gray-600">Nuestra IA analiza tus gastos y te da consejos reales para que tu plata rinda más. Finanzas inteligentes para todos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="bg-gray-50 py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Una experiencia completa en tu bolsillo</h2>
+                <p class="text-gray-600 mt-4">Diseñamos cada pantalla pensando en tu facilidad y control.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 justify-items-center">
+                
+                <div class="text-center group">
+                    <div class="relative mx-auto border-gray-800 bg-gray-800 border-[10px] rounded-[2rem] h-[500px] w-[260px] shadow-xl transition transform group-hover:-translate-y-2">
+                         <div class="rounded-[1.5rem] overflow-hidden w-full h-full bg-white relative">
+                            <img src="img/Multimedia (3).jpg" alt="Salud Financiera" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="mt-6 text-lg font-bold text-gray-900">Salud Financiera</h3>
+                    <p class="text-sm text-gray-500 px-4">Monitorea tu score y mejora tus hábitos.</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative mx-auto border-gray-800 bg-gray-800 border-[10px] rounded-[2rem] h-[500px] w-[260px] shadow-xl transition transform group-hover:-translate-y-2">
+                         <div class="rounded-[1.5rem] overflow-hidden w-full h-full bg-white relative">
+                            <img src="img/Multimedia (4).jpg" alt="Asistente de Voz" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="mt-6 text-lg font-bold text-gray-900">MUNI IA</h3>
+                    <p class="text-sm text-gray-500 px-4">Tu asistente de voz disponible 24/7.</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative mx-auto border-gray-800 bg-gray-800 border-[10px] rounded-[2rem] h-[500px] w-[260px] shadow-xl transition transform group-hover:-translate-y-2">
+                         <div class="rounded-[1.5rem] overflow-hidden w-full h-full bg-white relative">
+                            <img src="img/Multimedia (2).jpg" alt="Servicios Coomeva" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="mt-6 text-lg font-bold text-gray-900">Todo el Ecosistema</h3>
+                    <p class="text-sm text-gray-500 px-4">Banco, Fiduciaria y Salud en un solo lugar.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="comunidad" class="bg-indigo-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-indigo-600 rounded-full opacity-20 blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Aquí no eres un número. Eres parte del equipo.</h2>
+                <p class="text-indigo-200 text-lg mb-8 leading-relaxed">
+                    A diferencia de los bancos tradicionales, en MUNI tu voz importa. Somos una comunidad donde la participación es real.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-teal-400 text-xl"></i>
+                        <span>Participa en decisiones clave de la comunidad.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-teal-400 text-xl"></i>
+                        <span>Accede a beneficios que retornan a ti.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-teal-400 text-xl"></i>
+                        <span>Transparencia total sobre tu dinero.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20">
+                <div class="text-center">
+                    <i class="fas fa-users text-6xl text-teal-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-2">Comunidad MUNI</h3>
+                    <p class="text-indigo-100 mb-6">Únete a miles de personas que ya están construyendo su futuro financiero.</p>
+                    <button class="w-full bg-teal-400 text-indigo-900 font-bold py-3 rounded-xl hover:bg-teal-300 transition">
+                        Quiero ser parte
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-12">Empieza en minutos, desde tu sofá</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="relative">
+                <span class="text-9xl text-gray-100 font-bold absolute -top-10 left-1/2 transform -translate-x-1/2 -z-10">1</span>
+                <h4 class="text-xl font-bold text-brand mb-2">Descarga la App</h4>
+                <p class="text-gray-500">Disponible para iOS y Android.</p>
+            </div>
+            <div class="relative">
+                <span class="text-9xl text-gray-100 font-bold absolute -top-10 left-1/2 transform -translate-x-1/2 -z-10">2</span>
+                <h4 class="text-xl font-bold text-brand mb-2">Regístrate</h4>
+                <p class="text-gray-500">Solo necesitas tu cédula y una selfie. Cero papeleo.</p>
+            </div>
+            <div class="relative">
+                <span class="text-9xl text-gray-100 font-bold absolute -top-10 left-1/2 transform -translate-x-1/2 -z-10">3</span>
+                <h4 class="text-xl font-bold text-brand mb-2">Disfruta</h4>
+                <p class="text-gray-500">Activa tu cuenta y accede a todos los beneficios.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">MUNI</h4>
+                <p>Tu aliado financiero y de bienestar.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Producto</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Cuenta</a></li>
+                    <li><a href="#" class="hover:text-white">Tarjeta</a></li>
+                    <li><a href="#" class="hover:text-white">Beneficios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Soporte</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Preguntas Frecuentes</a></li>
+                    <li><a href="#" class="hover:text-white">Chat de Ayuda</a></li>
+                    <li><a href="#" class="hover:text-white">Seguridad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Términos y condiciones</a></li>
+                    <li><a href="#" class="hover:text-white">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center max-w-7xl mx-auto px-6 text-xs">
+            <p class="mb-2">© 2025 MUNI. Todos los derechos reservados.</p>
+            <p class="opacity-60">
+                MUNI es una marca operada bajo el modelo de economía solidaria. Vigilado por la Superintendencia de la Economía Solidaria. 
+                Inscrita en FOGACOOP. El uso de los servicios implica la aceptación de los estatutos sociales.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
